@@ -8,9 +8,11 @@ import Markdown from "./Markdown";
 function App() {
   return (
     <MarkdownProvider>
-      <div className="container-fluid ">
-        <div className="row">
+      <div className="container-fluid  ">
+        <h2 className="text-center p-1">Markdown Previewer</h2>
+        <div className="row mt-2 ml-md-5">
           <Markdown />
+          <div className="col-md-1"></div>
           <Preview />
         </div>
       </div>

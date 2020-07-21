@@ -1,3 +1,25 @@
 body {
-  background-color: aqua;
+  background-color: #7ed6df;
+}
+#preview,
+#editor {
+  background-color: #c7ecee;
+  min-height: 500px;
+  max-height: 500px;
+}
+/* .container > h2 {
+  color: #22a6b3;
+} */
+#preview {
+  overflow: scroll;
+}
+code {
+  background-color: #dff9fb;
+}
+pre {
+  background-color: #dff9fb;
+}
+blockquote {
+  border-left: 5px solid #535c68;
+  padding-left: 5px;
 }
