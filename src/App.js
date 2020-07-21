@@ -1,11 +1,21 @@
 import React from "react";
 
 import "./App.css";
-const ReactMarkdown = require("react-markdown");
+import Preview from "./Preview";
+import { MarkdownProvider } from "./MarkdownContext";
+import Markdown from "./Markdown";
 
 function App() {
-  const input = "# This is a header\n\nAnd this is a paragraph";
-  return <ReactMarkdown source={input} />;
+  return (
+    <MarkdownProvider>
+      <div className="container-fluid ">
+        <div className="row">
+          <Markdown />
+          <Preview />
+        </div>
+      </div>
+    </MarkdownProvider>
+  );
 }
 
 export default App;
