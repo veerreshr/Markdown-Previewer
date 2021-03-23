@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { MarkdownContext } from "./MarkdownContext";
-const ReactMarkdown = require("react-markdown");
-const gfm = require("remark-gfm");
+import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
 const Preview = () => {
   const [text] = useContext(MarkdownContext);
   return (
