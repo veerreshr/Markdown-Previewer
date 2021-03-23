@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { MarkdownContext } from "./MarkdownContext";
-const ReactMarkdown = require("react-markdown");
+import ReactMarkdown from "react-markdown";
 
 const Preview = () => {
   const [text] = useContext(MarkdownContext);
